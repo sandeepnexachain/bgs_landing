@@ -187,11 +187,9 @@ export default function Services() {
         </div>
 
         {/* Card 6 — Community Building | people nodes */}
-        <div className="group relative col-span-1 row-span-1 rounded-3xl overflow-hidden border border-white/10 h-72 cursor-pointer hover:border-red-400/30 transition-all duration-500" style={{ background: "linear-gradient(135deg, #0f1a0a 0%, #0a1a14 100%)" }}>
+        {/* <div className="group relative col-span-1 row-span-1 rounded-3xl overflow-hidden border border-white/10 h-72 cursor-pointer hover:border-red-400/30 transition-all duration-500" style={{ background: "linear-gradient(135deg, #0f1a0a 0%, #0a1a14 100%)" }}>
           <div className="absolute inset-0" style={{ background: "radial-gradient(circle at 70% 30%, rgba(234,179,8,0.15) 0%, transparent 55%)" }} />
-          {/* big bg text */}
           <div className="absolute -bottom-2 -right-2 text-[6rem] font-black text-yellow-400/5 leading-none select-none">06</div>
-          {/* user cluster */}
           <div className="absolute top-6 right-6 flex gap-2">
             {[0,1,2].map(i => (
               <div key={i} className="w-8 h-8 rounded-full border border-yellow-400/30 bg-yellow-400/10 flex items-center justify-center">
@@ -213,7 +211,7 @@ export default function Services() {
             </h3>
             <p className="mt-2 text-xs text-white/40 leading-relaxed">Empowering communities through trusted digital networks.</p>
           </div>
-        </div>
+        </div> */}
 
       </div>
 

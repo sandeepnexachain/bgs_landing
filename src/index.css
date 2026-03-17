@@ -160,3 +160,8 @@
 .animate-marquee:hover {
   animation-play-state: paused;
 }
+
+.text-stroke {
+  -webkit-text-stroke: 2px rgba(255, 255, 255, 0.15);
+  color: transparent;
+}
