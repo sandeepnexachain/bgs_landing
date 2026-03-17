@@ -15,26 +15,26 @@ export default function Hero() {
         />
       </div>
 
-      <div className="relative z-10 flex items-center justify-between px-16 pt-36">
+      <div className="relative z-10 flex items-center justify-between px-6 md:px-16 pt-28 md:pt-36">
         <div className="max-w-2xl">
           <div className="mb-6">
-            <h2 className="text-5xl font-black uppercase tracking-[0.15em] leading-none">
-              <span className="text-red-400 drop-shadow-[0_0_20px_rgba(239,68,68,0.9)]">BGS </span>
+            <h2 className="text-3xl md:text-5xl font-black uppercase tracking-[0.15em] leading-none">
+              <span className="text-green-400 drop-shadow-[0_0_20px_rgba(239,68,68,0.9)]">BGS </span>
               <span className="text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.4)]">Ecosystem</span>
             </h2>
             <div className="mt-2 h-[2px] w-48 bg-gradient-to-r from-red-400 via-red-300 to-transparent shadow-[0_0_8px_rgba(239,68,68,0.8)]" />
           </div>
 
-          <h1 className="mb-6 text-6xl font-bold leading-tight text-white">
+          <h1 className="mb-6 text-4xl md:text-6xl font-bold leading-tight text-white">
             WHERE REAL WORLD SERVICE
             <br />
             MEET DIGITAL INNOVATION
           </h1>
-          <p className="mb-10 max-w-xl text-base leading-relaxed text-white/80">
-            Empowering trusted connections through technology, wellness, and transparency.
+          <p className="mb-10 max-w-xl text-sm md:text-base leading-relaxed text-white/80">
+            Empowering trusted connections through technology, services and transparency.
           </p>
 
-          <div className="mb-12 flex gap-4">
+          <div className="mb-12 flex flex-wrap gap-4">
             <Button
               size="lg"
               className="rounded-full bg-white px-8 text-sm font-semibold uppercase tracking-wide text-[#7B6BA8] hover:bg-white/90"
@@ -60,7 +60,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="relative animate-pulse-scale">
+        <div className="relative animate-pulse-scale hidden lg:block">
           <div className="h-[720px] w-[540px]">
             <img
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Untitled%20design%20%2812%29-AUzcUJl45XueiOf0D1t9cvkzHg1wce.png"
@@ -80,7 +80,7 @@ export default function Hero() {
         <ArrowDown className="h-4 w-4 animate-bounce" />
       </button>
 
-      <div className="absolute bottom-10 left-16 z-10 flex gap-6">
+      <div className="absolute bottom-10 left-6 md:left-16 z-10 flex gap-6">
         <Twitter className="h-5 w-5 cursor-pointer text-white transition-all duration-300 hover:text-red-400 hover:drop-shadow-[0_0_12px_rgba(239,68,68,0.9)]" />
         <Linkedin className="h-5 w-5 cursor-pointer text-white transition-all duration-300 hover:text-red-400 hover:drop-shadow-[0_0_12px_rgba(239,68,68,0.9)]" />
         <Facebook className="h-5 w-5 cursor-pointer text-white transition-all duration-300 hover:text-red-400 hover:drop-shadow-[0_0_12px_rgba(239,68,68,0.9)]" />

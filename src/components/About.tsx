@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section id="about" className="relative min-h-screen bg-gradient-to-br from-[#3B2D6A] via-[#5B4B8A] to-[#6B4B7A] px-16 py-24">
+    <section id="about" className="relative min-h-screen bg-gradient-to-br from-[#3B2D6A] via-[#5B4B8A] to-[#6B4B7A] px-6 md:px-16 py-24">
       <div
         className="pointer-events-none absolute inset-0 opacity-5"
         style={{
@@ -11,11 +11,11 @@ export default function About() {
       />
 
       {/* Top: ABOUT US + images */}
-      <div className="relative z-10 grid grid-cols-[320px_1fr_280px] gap-8 items-start">
+      <div className="relative z-10 grid grid-cols-1 md:grid-cols-[320px_1fr_280px] gap-8 items-start">
         <div>
           <div className="leading-none">
-            <p className="text-[7rem] font-black text-red-400 drop-shadow-[0_0_30px_rgba(239,68,68,0.7)] leading-none">ABOUT</p>
-            <p className="text-[7rem] font-black text-white leading-none -mt-4">US</p>
+            <p className="text-[5rem] md:text-[7rem] font-black text-red-400 drop-shadow-[0_0_30px_rgba(239,68,68,0.7)] leading-none">ABOUT</p>
+            <p className="text-[5rem] md:text-[7rem] font-black text-white leading-none -mt-4">US</p>
           </div>
           <div className="mt-3 h-[3px] w-20 bg-gradient-to-r from-red-400 to-transparent rounded-full" />
           <p className="mt-6 text-xs font-bold uppercase tracking-[0.25em] text-red-400">BGS Ecosystem</p>
@@ -58,30 +58,23 @@ export default function About() {
           <div className="h-px flex-1 bg-gradient-to-l from-transparent to-red-400/50" />
         </div>
 
-        <div className="grid grid-cols-[1fr_auto_1fr] gap-8 items-center">
-          {[
-            { name: "Alex Morgan", role: "Founder & CEO", img: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80" },
-            { name: "Ryan Carter", role: "Co-Founder & CTO", img: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80" },
-          ].map((person, i) =>
-            i === 0 ? (
-              <PersonCard key={person.name} {...person} />
-            ) : (
-              [
-                <div key="center" className="text-center px-8 max-w-sm">
-                  <h2 className="text-5xl font-black uppercase leading-tight text-white">
-                    MEET THE
-                    <br />
-                    <span className="text-red-400 drop-shadow-[0_0_25px_rgba(239,68,68,0.8)]">PRINCIPALS</span>
-                  </h2>
-                  <div className="mx-auto mt-3 h-[2px] w-20 bg-gradient-to-r from-transparent via-red-400 to-transparent shadow-[0_0_8px_rgba(239,68,68,0.8)]" />
-                  <p className="mt-5 text-sm leading-relaxed text-white/55">
-                    Our founders oversee the day-to-day operations of BGS Ecosystem — driving the design, technology, and vision of our platform forward.
-                  </p>
-                </div>,
-                <PersonCard key={person.name} {...person} />,
-              ]
-            )
-          )}
+        {/* Mobile: stack all three; Desktop: 3-col grid */}
+        <div className="flex flex-col items-center gap-10 md:grid md:grid-cols-3 md:gap-8 md:items-center">
+          <PersonCard name="Alex Morgan" role="Founder & CEO" img="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80" />
+
+          <div className="text-center px-4 md:px-8 max-w-sm order-first md:order-none">
+            <h2 className="text-4xl md:text-5xl font-black uppercase leading-tight text-white">
+              MEET THE
+              <br />
+              <span className="text-red-400 drop-shadow-[0_0_25px_rgba(239,68,68,0.8)]">PRINCIPALS</span>
+            </h2>
+            <div className="mx-auto mt-3 h-[2px] w-20 bg-gradient-to-r from-transparent via-red-400 to-transparent shadow-[0_0_8px_rgba(239,68,68,0.8)]" />
+            <p className="mt-5 text-sm leading-relaxed text-white/55">
+              Our founders oversee the day-to-day operations of BGS Ecosystem — driving the design, technology, and vision of our platform forward.
+            </p>
+          </div>
+
+          <PersonCard name="Ryan Carter" role="Co-Founder & CTO" img="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80" />
         </div>
       </div>
     </section>
