@@ -91,13 +91,13 @@ export default function ResourceSection() {
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
           <div>
             <div className="flex items-center gap-3 mb-5">
-              <div className="h-px w-10 bg-red-400" />
-              <span className="text-xs font-black uppercase tracking-[0.4em] text-red-400">Knowledge Hub</span>
+              <div className="h-px w-10 bg-green-400" />
+              <span className="text-xs font-black uppercase tracking-[0.4em] text-green-400">Knowledge Hub</span>
             </div>
             <h2 className="text-6xl md:text-8xl font-black uppercase leading-none text-white tracking-tight">
               RESOURCE
               <br />
-              <span className="text-stroke-red">CENTER</span>
+              <span className="text-stroke-green">CENTER</span>
             </h2>
           </div>
           <div className="md:mb-2 md:max-w-sm md:text-right">
@@ -106,7 +106,7 @@ export default function ResourceSection() {
             </p>
             <button
               onClick={() => navigate("/resource")}
-              className="mt-5 inline-flex items-center gap-2 text-xs font-black uppercase tracking-widest text-red-400 hover:gap-4 transition-all duration-300"
+              className="mt-5 inline-flex items-center gap-2 text-xs font-black uppercase tracking-widest text-green-400 hover:gap-4 transition-all duration-300"
             >
               View All Resources <ChevronRight className="h-4 w-4" />
             </button>
@@ -193,14 +193,14 @@ export default function ResourceSection() {
         {/* Bottom CTA */}
         <div className="mt-14 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 border-t border-white/8 pt-10">
           <div className="flex items-center gap-4">
-            <div className="h-px w-16 bg-red-400" />
+            <div className="h-px w-16 bg-green-400" />
             <span className="text-xs font-black uppercase tracking-[0.3em] text-white/30">
               120+ resources available
             </span>
           </div>
           <button
             onClick={() => navigate("/resource")}
-            className="group flex items-center gap-3 border-2 border-white/20 px-8 py-4 text-sm font-black uppercase tracking-widest text-white hover:border-red-400 hover:text-red-400 transition-all duration-300"
+            className="group flex items-center gap-3 border-2 border-white/20 px-8 py-4 text-sm font-black uppercase tracking-widest text-white hover:border-green-400 hover:text-green-400 transition-all duration-300"
           >
             Explore All Resources
             <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />

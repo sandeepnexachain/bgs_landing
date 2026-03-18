@@ -67,13 +67,13 @@ export default function Industries() {
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8">
           <div>
             <div className="flex items-center gap-3 mb-5">
-              <div className="h-px w-10 bg-red-400" />
-              <span className="text-xs font-black uppercase tracking-[0.4em] text-red-400">What We Serve</span>
+              <div className="h-px w-10 bg-green-400" />
+              <span className="text-xs font-black uppercase tracking-[0.4em] text-green-400">What We Serve</span>
             </div>
             <h2 className="text-6xl md:text-8xl font-black uppercase leading-none text-white tracking-tight">
               TECH
               <br />
-              <span className="text-stroke-red">INDUSTRIES</span>
+              <span className="text-stroke-green">INDUSTRIES</span>
             </h2>
           </div>
           <div className="md:mb-2 md:max-w-sm md:text-right">

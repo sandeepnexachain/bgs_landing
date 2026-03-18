@@ -65,8 +65,8 @@ export default function Portfolio() {
         <div className="relative z-10 flex flex-col md:flex-row md:items-end md:justify-between gap-4">
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="h-px w-12 bg-red-400" />
-              <span className="text-xs font-black uppercase tracking-[0.4em] text-red-400">Selected Work</span>
+              <div className="h-px w-12 bg-green-400" />
+              <span className="text-xs font-black uppercase tracking-[0.4em] text-green-400">Selected Work</span>
             </div>
             <h2 className="text-6xl md:text-[8rem] font-black uppercase leading-none text-white tracking-tight">
               PORT<span className="text-stroke">FOLIO</span>
@@ -90,7 +90,7 @@ export default function Portfolio() {
               onClick={() => setActive(f)}
               className={`px-4 md:px-5 py-2 text-xs font-black uppercase tracking-widest border-2 transition-all duration-200 ${
                 active === f
-                  ? "bg-red-500 border-red-500 text-white shadow-[4px_4px_0px_rgba(239,68,68,0.4)]"
+                  ? "bg-green-500 border-green-500 text-white shadow-[4px_4px_0px_rgba(34,197,94,0.4)]"
                   : "border-white/20 text-white/40 hover:border-white/50 hover:text-white"
               }`}
             >
@@ -206,7 +206,7 @@ export default function Portfolio() {
               key={i}
               className={`p-6 md:p-10 text-center ${i % 2 === 0 && i < 3 ? "border-r-2 border-white/10" : ""} ${i < 2 ? "border-b-2 md:border-b-0 border-white/10" : ""} ${i === 1 ? "md:border-r-2 md:border-white/10" : ""} ${i === 2 ? "md:border-r-2 md:border-white/10" : ""} group hover:bg-white/3 transition-colors duration-300`}
             >
-              <p className="text-4xl md:text-6xl font-black text-white leading-none mb-2 group-hover:text-red-400 transition-colors duration-300">
+              <p className="text-4xl md:text-6xl font-black text-white leading-none mb-2 group-hover:text-green-400 transition-colors duration-300">
                 {s.num}
               </p>
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-white/30">{s.label}</p>
@@ -217,12 +217,12 @@ export default function Portfolio() {
         {/* View all CTA */}
         <div className="mt-12 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
           <div className="flex items-center gap-4">
-            <div className="h-px w-16 bg-red-400" />
+            <div className="h-px w-16 bg-green-400" />
             <span className="text-xs font-black uppercase tracking-[0.3em] text-white/30">
               Explore all {PROJECTS.length} projects
             </span>
           </div>
-          <button className="group flex items-center gap-3 border-2 border-white/20 px-8 py-4 text-sm font-black uppercase tracking-widest text-white hover:border-red-400 hover:text-red-400 transition-all duration-300">
+          <button className="group flex items-center gap-3 border-2 border-white/20 px-8 py-4 text-sm font-black uppercase tracking-widest text-white hover:border-green-400 hover:text-green-400 transition-all duration-300">
             View All Work
             <ExternalLink className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
           </button>

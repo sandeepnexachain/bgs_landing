@@ -20,7 +20,7 @@ export default function PartnersBanner() {
       <div className="flex justify-center mb-8">
         <span className="rounded-full border border-white/20 bg-white/5 px-5 py-2 text-xs font-semibold text-white tracking-wide">
           Join Over{" "}
-          <span className="rounded-md bg-red-400 px-2 py-0.5 text-white font-black">1000+</span>{" "}
+          <span className="rounded-md bg-green-400 px-2 py-0.5 text-white font-black">1000+</span>{" "}
           Companies with BGS Ecosystem
         </span>
       </div>
@@ -35,7 +35,7 @@ export default function PartnersBanner() {
           {doubled.map((name, i) => (
             <div
               key={i}
-              className="flex h-16 min-w-[160px] items-center justify-center rounded-xl border border-white/10 bg-white/5 px-6 text-sm font-bold tracking-wide text-white hover:border-red-400/40 hover:text-white/80 hover:bg-white/8 transition-all duration-300 cursor-default select-none"
+              className="flex h-16 min-w-[160px] items-center justify-center rounded-xl border border-white/10 bg-white/5 px-6 text-sm font-bold tracking-wide text-white hover:border-green-400/40 hover:text-white/80 hover:bg-white/8 transition-all duration-300 cursor-default select-none"
             >
               {name}
             </div>

@@ -12,24 +12,24 @@ export default function Footer() {
       {/* Contact Strip */}
       <div className="flex flex-col md:flex-row items-center justify-between gap-8 px-6 md:px-16 py-12 border-b border-white/5">
         <div>
-          <p className="text-xs font-black uppercase tracking-[0.3em] text-red-400 mb-2">Get In Touch</p>
+          <p className="text-xs font-black uppercase tracking-[0.3em] text-green-400 mb-2">Get In Touch</p>
           <h2 className="text-2xl md:text-3xl font-black text-white">
-            Let's build something <span className="text-red-400">extraordinary</span>
+            Let's build something <span className="text-green-400">extraordinary</span>
           </h2>
         </div>
         <div className="flex flex-col sm:flex-row gap-4">
           <a
             href="mailto:hello@bgsecosystem.com"
-            className="flex items-center gap-3 rounded-xl border border-white/15 bg-white/5 px-6 py-3 text-sm text-white hover:border-red-400/50 hover:bg-white/10 transition-all duration-300"
+            className="flex items-center gap-3 rounded-xl border border-white/15 bg-white/5 px-6 py-3 text-sm text-white hover:border-green-400/50 hover:bg-white/10 transition-all duration-300"
           >
-            <Mail className="h-4 w-4 text-red-400" />
+            <Mail className="h-4 w-4 text-green-400" />
             hello@bgsecosystem.com
           </a>
           <a
             href="tel:+18008270001"
-            className="flex items-center gap-3 rounded-xl border border-white/15 bg-white/5 px-6 py-3 text-sm text-white hover:border-red-400/50 hover:bg-white/10 transition-all duration-300"
+            className="flex items-center gap-3 rounded-xl border border-white/15 bg-white/5 px-6 py-3 text-sm text-white hover:border-green-400/50 hover:bg-white/10 transition-all duration-300"
           >
-            <Phone className="h-4 w-4 text-red-400" />
+            <Phone className="h-4 w-4 text-green-400" />
             +1-800-BGS-0001
           </a>
         </div>
@@ -56,16 +56,16 @@ export default function Footer() {
                 return <circle key={i} cx={x} cy={y} r={Math.random() * 1.5 + 0.5} fill="white" opacity={opacity} />
               })}
               {[[280,100,350,130],[310,80,370,160],[260,140,340,170],[300,160,360,120]].map(([x1,y1,x2,y2],i) => (
-                <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} stroke="rgba(239,68,68,0.4)" strokeWidth="1" />
+                <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} stroke="rgba(34,197,94,0.4)" strokeWidth="1" />
               ))}
               {[[280,100],[350,130],[310,80],[370,160],[260,140],[340,170]].map(([x,y],i) => (
-                <circle key={i} cx={x} cy={y} r="3" fill="rgba(239,68,68,0.8)" />
+                <circle key={i} cx={x} cy={y} r="3" fill="rgba(34,197,94,0.8)" />
               ))}
               <defs>
                 <linearGradient id="globeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
                   <stop offset="0%" stopColor="#22c55e" stopOpacity="0.6" />
                   <stop offset="50%" stopColor="#a855f7" stopOpacity="0.4" />
-                  <stop offset="100%" stopColor="#ef4444" stopOpacity="0.3" />
+                  <stop offset="100%" stopColor="#22c55e" stopOpacity="0.3" />
                 </linearGradient>
               </defs>
             </svg>
@@ -96,11 +96,11 @@ export default function Footer() {
         {/* Brand col — full width on mobile */}
         <div className="col-span-2 md:col-span-1">
           <div className="flex items-center gap-2 mb-6">
-            <div className="w-6 h-6 rounded-md bg-red-500 flex items-center justify-center shadow-[0_0_10px_rgba(239,68,68,0.6)]">
+            <div className="w-6 h-6 rounded-md bg-green-500 flex items-center justify-center shadow-[0_0_10px_rgba(34,197,94,0.6)]">
               <div className="w-3 h-3 rounded-sm bg-white/80" />
             </div>
             <span className="text-white font-black text-lg tracking-wide">
-              <span className="text-red-400">BGS</span> Ecosystem
+              <span className="text-green-400">BGS</span> Ecosystem
             </span>
           </div>
 
@@ -115,14 +115,14 @@ export default function Footer() {
             <div>
               <p className="text-xs text-white/30 mb-1">Phone number</p>
               <div className="flex items-center gap-1.5">
-                <Phone className="h-3 w-3 text-red-400" />
+                <Phone className="h-3 w-3 text-green-400" />
                 <span className="text-sm font-semibold text-white">+1-800-BGS-0001</span>
               </div>
             </div>
             <div>
               <p className="text-xs text-white/30 mb-1">Email</p>
               <div className="flex items-center gap-1.5">
-                <Mail className="h-3 w-3 text-red-400" />
+                <Mail className="h-3 w-3 text-green-400" />
                 <span className="text-sm font-semibold text-white break-all">hello@bgsecosystem.com</span>
               </div>
             </div>
@@ -137,7 +137,7 @@ export default function Footer() {
               <li key={link}>
                 <button
                   onClick={() => scrollTo(link.toLowerCase())}
-                  className="text-sm text-white/50 hover:text-red-400 transition-colors duration-200"
+                  className="text-sm text-white/50 hover:text-green-400 transition-colors duration-200"
                 >
                   {link}
                 </button>
@@ -152,7 +152,7 @@ export default function Footer() {
           <ul className="space-y-3">
             {SOCIAL.map((s) => (
               <li key={s}>
-                <a href="#" className="text-sm text-white/50 hover:text-red-400 transition-colors duration-200">
+                <a href="#" className="text-sm text-white/50 hover:text-green-400 transition-colors duration-200">
                   {s}
                 </a>
               </li>
@@ -166,7 +166,7 @@ export default function Footer() {
           <ul className="space-y-3">
             {LEGAL.map((l) => (
               <li key={l}>
-                <a href="#" className="text-sm text-white/50 hover:text-red-400 transition-colors duration-200">
+                <a href="#" className="text-sm text-white/50 hover:text-green-400 transition-colors duration-200">
                   {l}
                 </a>
               </li>

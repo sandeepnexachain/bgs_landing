@@ -42,8 +42,8 @@ export default function Navbar() {
             <li
               key={item}
               onClick={() => handleNav(item)}
-              className={`cursor-pointer transition-all duration-300 hover:text-red-400 hover:drop-shadow-[0_0_8px_rgba(239,68,68,0.8)] ${
-                item === "Resource" && location.pathname === "/resource" ? "text-red-400" : ""
+              className={`cursor-pointer transition-all duration-300 hover:text-green-400 hover:drop-shadow-[0_0_8px_rgba(34,197,94,0.8)] ${
+                item === "Resource" && location.pathname === "/resource" ? "text-green-400" : ""
               }`}
             >
               {item.toUpperCase()}
@@ -65,8 +65,8 @@ export default function Navbar() {
               <li
                 key={item}
                 onClick={() => handleNav(item)}
-                className={`cursor-pointer text-sm font-bold tracking-wide hover:text-red-400 transition-colors duration-200 py-2 border-b border-white/5 ${
-                  item === "Resource" && location.pathname === "/resource" ? "text-red-400" : "text-white/70"
+                className={`cursor-pointer text-sm font-bold tracking-wide hover:text-green-400 transition-colors duration-200 py-2 border-b border-white/5 ${
+                  item === "Resource" && location.pathname === "/resource" ? "text-green-400" : "text-white/70"
                 }`}
               >
                 {item.toUpperCase()}
